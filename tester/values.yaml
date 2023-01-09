@@ -8,11 +8,11 @@ image:
   repository: 626453062267.dkr.ecr.us-west-1.amazonaws.com/nodetester
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: master-3d54aca
+  tag: master-00bace2
 
 imagePullSecrets: []
-nameOverride: master-3d54aca
-fullnameOverride: master-3d54aca
+nameOverride: master-00bace2
+fullnameOverride: master-00bace2
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -21,7 +21,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: master-3d54aca
+  name: master-00bace2
 
 podAnnotations: {}
 
@@ -42,7 +42,7 @@ service:
 
 ingress:
   enabled: false
-  className: master-3d54aca
+  className: master-00bace2
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
