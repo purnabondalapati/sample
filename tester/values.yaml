@@ -8,11 +8,11 @@ image:
   repository: nodetester
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: master-4020adf
 
 imagePullSecrets: []
-nameOverride: ""
-fullnameOverride: ""
+nameOverride: master-4020adf
+fullnameOverride: master-4020adf
 
 serviceAccount:
   # Specifies whether a service account should be created
@@ -21,7 +21,7 @@ serviceAccount:
   annotations: {}
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: master-4020adf
 
 podAnnotations: {}
 
@@ -42,7 +42,7 @@ service:
 
 ingress:
   enabled: false
-  className: ""
+  className: master-4020adf
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
