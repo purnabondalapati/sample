@@ -8,7 +8,7 @@ image:
   repository: 626453062267.dkr.ecr.us-west-1.amazonaws.com/nodetester
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  tag: master-00bace2
 
 imagePullSecrets: []
 nameOverride: ""
