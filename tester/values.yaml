@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: nodetester
+  repository: 626453062267.dkr.ecr.us-west-1.amazonaws.com/nodetester
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: master-4020adf
