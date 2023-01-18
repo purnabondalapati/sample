@@ -31,7 +31,7 @@ spec:
         - name: nginx
           image: nginx
           ports: 
-           containerPort: 80
+          - containerPort: 80
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
