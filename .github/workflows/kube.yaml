@@ -33,5 +33,5 @@ jobs:
       with:
        args: |
    
-         kubectl set image -n tester deployment.apps/test-tester  nginx=$ECR_REGISTRY/$ECR_REPOSITORY:${GITHUB_REF##*/}
+         set image -n tester deployment.apps/test-tester  nginx=$ECR_REGISTRY/$ECR_REPOSITORY:${GITHUB_REF##*/}
         
