@@ -33,5 +33,5 @@ jobs:
       with:
        args: |
    
-         kubectl set image -n tester deployment.apps/test-tester  $ECR_REPOSITORY=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+         kubectl set image -n tester deployment.apps/test-tester  tester=$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         
